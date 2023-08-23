@@ -1,6 +1,6 @@
-title: Microsoft Open Source
+title: EDGE
 email:
-description: Microsoft Open Source
+description: EDGE
 
 twitter_username: openatmicrosoft
 github_username: microsoft
@@ -57,9 +57,8 @@ twitter:
   username: openatmicrosoft
 
 defaults:
-  -
-    scope:
-      path: ""
+  - scope:
+      path: ''
     values:
       image: https://opensource.azureedge.net/assets/images/social-card.png
       layout: default

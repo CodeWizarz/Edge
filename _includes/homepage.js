@@ -25,7 +25,7 @@ function pause() {
   toggleText.text('Resume');
   toggleText2.text('Resume animations and start showing new graphics');
   toggleLink.prop('title', 'Resume graphics');
-  pageHeroAccessibilityControls.trigger("hero-pause");
+  pageHeroAccessibilityControls.trigger('hero-pause');
   return false;
 }
 
@@ -36,7 +36,7 @@ function resume() {
   toggleLink.prop('title', 'Pause graphics');
   toggleText.text('Pause');
   toggleText2.text('Pause animations and stop showing new graphics');
-  pageHeroAccessibilityControls.trigger("hero-resume");
+  pageHeroAccessibilityControls.trigger('hero-resume');
   return false;
 }
 
@@ -60,13 +60,16 @@ var heroCount = 6;
 var lastKnownWidth = null;
 
 function resetAvatars() {
-  var visible = avatars.filter(avatar => visibleAvatars[avatar]);
-  visible.forEach(avatar => dismissAvatar(avatar));
+  var visible = avatars.filter((avatar) => visibleAvatars[avatar]);
+  visible.forEach((avatar) => dismissAvatar(avatar));
 }
 
 function getOffset(element) {
   var item = element.getBoundingClientRect();
-  return [item.top + window.pageYOffset - document.documentElement.clientTop, item.left + window.pageXOffset - document.documentElement.clientLeft];
+  return [
+    item.top + window.pageYOffset - document.documentElement.clientTop,
+    item.left + window.pageXOffset - document.documentElement.clientLeft,
+  ];
 }
 
 function getSize(element) {
@@ -151,33 +154,42 @@ function featureNextAvatar(destinationSquareIndex) {
   mapAvatarToId[newAvatar] = newAvatarId;
   visibleAvatars[newAvatar] = true;
   squareToAvatar[destinationSquareIndex] = newAvatar;
-  squareRemainingClicks[destinationSquareIndex] = getRandomInt(minimumClicksPerAvatar, maximumClicksPerAvatar);
+  squareRemainingClicks[destinationSquareIndex] = getRandomInt(
+    minimumClicksPerAvatar,
+    maximumClicksPerAvatar
+  );
 
   var heroSquare = getHeroSquare(heroSquares[destinationSquareIndex]);
   var heroPosition = getRelativeOffset(heroSquare, heroFigure);
   var heroSize = getSize(heroSquare);
   var heroImage = document.createElement('img');
   heroImage.src = newAvatar;
-  heroImage.id = newAvatarId
-  heroImage.alt = 'A random photo or avatar of an open source contributor from Microsoft';
+  heroImage.id = newAvatarId;
+  heroImage.alt =
+    'A random photo or avatar of an open source contributor from Edge';
   var style = heroImage.style;
   style.position = 'absolute';
   style.display = 'none';
   style.backgroundColor = '#000';
   style.borderRadius = '50%';
-  style.height = (Math.ceil(heroSize[0]) + 1.5) + 'px';
-  style.width = (Math.ceil(heroSize[1]) + 1.5) + 'px';
-  style.top = (Math.round(heroPosition[0]) - 1) + 'px';
-  style.left = (Math.round(heroPosition[1]) - 1) + 'px';
+  style.height = Math.ceil(heroSize[0]) + 1.5 + 'px';
+  style.width = Math.ceil(heroSize[1]) + 1.5 + 'px';
+  style.top = Math.round(heroPosition[0]) - 1 + 'px';
+  style.left = Math.round(heroPosition[1]) - 1 + 'px';
   heroAvatarsContainer.append(heroImage);
-  setTimeout(() => {
-    $(newAvatarSelector).fadeIn(introduceMs, function () {
-      var rect = $(heroSquare).children('rect');
-      if (rect && rect.length === 1) {
-        $(rect).fadeOut(dismissMs, () => { rect.remove() });
-      }
-    });
-  }, outgoingAvatar ? inbetweenMs : 1);
+  setTimeout(
+    () => {
+      $(newAvatarSelector).fadeIn(introduceMs, function () {
+        var rect = $(heroSquare).children('rect');
+        if (rect && rect.length === 1) {
+          $(rect).fadeOut(dismissMs, () => {
+            rect.remove();
+          });
+        }
+      });
+    },
+    outgoingAvatar ? inbetweenMs : 1
+  );
 }
 
 function dismissAvatar(avatar) {
@@ -197,12 +209,12 @@ function loadAvatars() {
     type: 'GET',
     url: '/api/avatars',
     dataType: 'json',
-    success: function(response) {
-        if (response && response.avatars && response.avatars.length) {
-            avatars = response.avatars;
-        }
-        setTimeout(worker, firstDisplayDelayMs);
-        setTimeout(hookResize, hookResizeHandlerMs);
+    success: function (response) {
+      if (response && response.avatars && response.avatars.length) {
+        avatars = response.avatars;
+      }
+      setTimeout(worker, firstDisplayDelayMs);
+      setTimeout(hookResize, hookResizeHandlerMs);
     },
   });
 }

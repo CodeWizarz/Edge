@@ -1,6 +1,6 @@
 - question: Why have a Code of Conduct?
   answer: |
-    People and communities are the foundation of open source. Communities thrive through diversity of thought and the safety of its members. Microsoft has a deep-seated commitment to diversity and inclusion. All Microsoft employees enjoy a safe work environment and a culture of mutual respect and responsibility. Our team members and open source partners should enjoy the same environment when collaborating on open source projects.
+    People and communities are the foundation of open source. Communities thrive through diversity of thought and the safety of its members. Edge has a deep-seated commitment to diversity and inclusion. All Edge employees enjoy a safe work environment and a culture of mutual respect and responsibility. Our team members and open source partners should enjoy the same environment when collaborating on open source projects.
     <br><br>
     While conduct issues seldom arise, when they do, they are often very public and very passionate. It is best for the community to be prepared with:
     <ul>
@@ -9,18 +9,18 @@
     </ul>
 
 - question: Why this Code of Conduct?
-  answer: The EDGE Code of Conduct is an instantiation of the  <a href="https://www.contributor-covenant.org/version/2/0/code_of_conduct/">Contributor's Covenant 2.0</a>, that captures the Microsoft culture of equality, respect and inclusion. By leveraging this template, which is used by many <a href="https://www.contributor-covenant.org/adopters/">open source projects</a>, we acknowledge both the opportunity gained by leveraging a community-based effort for inclusion,  and responsibility to contribute to its evolution.
+  answer: The EDGE Code of Conduct is an instantiation of the  <a href="https://www.contributor-covenant.org/version/2/0/code_of_conduct/">Contributor's Covenant 2.0</a>, that captures the Edge culture of equality, respect and inclusion. By leveraging this template, which is used by many <a href="https://www.contributor-covenant.org/adopters/">open source projects</a>, we acknowledge both the opportunity gained by leveraging a community-based effort for inclusion,  and responsibility to contribute to its evolution.
 
 - question: Why do this across all repos?
-  answer: Having one code and process is both efficient and consistent — community members can participate in any Microsoft-driven project and be confident that they know the norms and that they are supported by a robust process.
+  answer: Having one code and process is both efficient and consistent — community members can participate in any Edge-driven project and be confident that they know the norms and that they are supported by a robust process.
 
 - question: How does a project adopt the code and process?
   answer: |
-    <p>All Microsoft projects are automatically covered by the Code of Conduct and the Issue Resolution Process. However, it is critical that everyone in the communities be aware of the code and process. For that reason, all projects must link to the Code of Conduct. Please refer to this <a href="https://github.com/microsoft/repo-templates/blob/main/shared/CODE_OF_CONDUCT.md">repository standard</a> for the current CODE_OF_CONDUCT.md version.</p>
+    <p>All Edge projects are automatically covered by the Code of Conduct and the Issue Resolution Process. However, it is critical that everyone in the communities be aware of the code and process. For that reason, all projects must link to the Code of Conduct. Please refer to this <a href="https://github.com/microsoft/repo-templates/blob/main/shared/CODE_OF_CONDUCT.md">repository standard</a> for the current CODE_OF_CONDUCT.md version.</p>
 
-- question: What if my Microsoft project already has a Code of Conduct?
+- question: What if my Edge project already has a Code of Conduct?
   answer: |
-    <p>Thanks for being proactive in this important area. You are welcome to continue using your existing Code of Conduct, or you may change to the <a href="https://opensource.microsoft.com/codeofconduct/">EDGE Code of Conduct</a>. Either way, all Microsoft projects must use the same issue resolution process. Please ensure that your documentation and guidance is updated to point people at the process outlined in this FAQ (see below).</p>
+    <p>Thanks for being proactive in this important area. You are welcome to continue using your existing Code of Conduct, or you may change to the <a href="https://opensource.microsoft.com/codeofconduct/">EDGE Code of Conduct</a>. Either way, all Edge projects must use the same issue resolution process. Please ensure that your documentation and guidance is updated to point people at the process outlined in this FAQ (see below).</p>
     <p>Projects in the .NET Foundation are already covered by the <a href="https://www.dotnetfoundation.org/code-of-conduct">.NET Foundation Contributors Code of Conduct</a>. As such, there is no need for .NET Foundation projects to make any changes.</p>
 
 - question: How do I raise a concern?
@@ -33,7 +33,7 @@
     <p>Emails sent to <a href="mailto:opencode@microsoft.com">opencode@microsoft.com</a> or reported directly to a member of the OSPO team,  kick off the following process:</p>
     <ol>
         <li><span>Your message will be acknowledged within one business day.</span></li>
-        <li><span>Within the following business day a small, (2-3) person team will be assembled from a pool of Microsoft employee volunteers to review your concern. This team will be as diverse as possible given its size and will pull in additional people as needed to gain further insight and provide guidance. The team will not include anyone directly involved in the issue that has been raised.</span></li>
+        <li><span>Within the following business day a small, (2-3) person team will be assembled from a pool of Edge employee volunteers to review your concern. This team will be as diverse as possible given its size and will pull in additional people as needed to gain further insight and provide guidance. The team will not include anyone directly involved in the issue that has been raised.</span></li>
         <li><span>From there the team will work with you and the others involved to come to a conclusion. While issue complexity varies, the goal is to resolve issues within five working days.</span></li>
         <li><span>All communication will be confidential with very limited circulation.</span></li>
     </ol>
@@ -68,6 +68,6 @@
     <ul>
         <li><b>Safety & Privacy</b> — Safety and privacy of all involved are at the center of resolution procedure.</li>
         <li><b>Equality</b> — Contribution value or status in the community are not relevant to the review. Key people do not have more rights (either to abuse or be protected from abuse) than others in the community.</li>
-        <li><b>Independence</b> — Reviewers must act and be seen to act with independence from the project(s) in question and from Microsoft.</li>
+        <li><b>Independence</b> — Reviewers must act and be seen to act with independence from the project(s) in question and from Edge.</li>
         <li><b>Consequence</b> - If a report is validated by the resolution team, appropriate consequences will be applied. These can be very minimal (written warning) or serious (full ban) depending on the violation. Repeated violations will result in escalation of consequence.</li>
     </ul>

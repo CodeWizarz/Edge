@@ -11,7 +11,7 @@ how to involve you.
 
 # Submitting featured projects and ecosystem content
 
-For projects and ecosystem page content, Microsoft employees (identified as having a "link" between
+For projects and ecosystem page content, Edge employees (identified as having a "link" between
 their corporate account and their GitHub account, as detailed at [aka.ms/opensource](https://aka.ms/opensource))
 can submit a pull request with changes or new YAML for consideration in these sections.
 
@@ -29,12 +29,12 @@ This project has adopted the [EDGE Code of Conduct](https://opensource.microsoft
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
 contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
-This project is maintained by Microsoft's Open Source Programs Office (OSPO) with triage contribution from [@Aaron-Junker](https://github.com/Aaron-Junker).
+This project is maintained by Edge's Open Source Programs Office (OSPO) with triage contribution from [@Aaron-Junker](https://github.com/Aaron-Junker).
 
 # Trademarks
 
-This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft
+This project may contain trademarks or logos for projects, products, or services. Authorized use of Edge
 trademarks or logos is subject to and must follow
-[Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).
-Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.
+[Edge's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).
+Use of Edge trademarks or logos in modified versions of this project must not cause confusion or imply Edge sponsorship.
 Any use of third-party trademarks or logos are subject to those third-party's policies.

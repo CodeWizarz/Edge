@@ -1,8 +1,9 @@
 ---
-title: Accessibility Insights
+title: LLM
 logo: accessibility-insights.svg
 featured: true
-description: Accessibility Insights is a suite of open source tools that help developers find and fix accessibility issues in Web, Windows and Android applications.
+description: llm's description
+shortDescription: llm's short description
 linkText: Get Accessibility Insights
-projectUrl: https://accessibilityinsights.io/
+projectUrl: https://github.com/edge/
 ---

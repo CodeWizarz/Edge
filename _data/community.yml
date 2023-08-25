@@ -4,7 +4,6 @@
 #
 ##
 
-
 - conferences:
   #- title: GitHub Universe 2020
   #  date: December 2020
@@ -12,16 +11,14 @@
   #  externalLogo: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
   #  description: Conference descripiton here lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
   #  url: https://githubuniverse.com
-
-
-- resources:
-  - title: Microsoft's Open Source Code of Conduct
-    url: /codeofconduct
-  - title: Microsoft Contributor License Agreement
-    url: https://cla.opensource.microsoft.com
-  - title: Third-Party Disclosures
-    url: https://3rdpartysource.microsoft.com/
-  - title: Microsoft's Open Source Program
-    url: /program/
-  - title: Azure Credits
-    url: /azure-credits
+# - resources:
+#   - title: Microsoft's Open Source Code of Conduct
+#     url: /codeofconduct
+#   - title: Microsoft Contributor License Agreement
+#     url: https://cla.opensource.microsoft.com
+#   - title: Third-Party Disclosures
+#     url: https://3rdpartysource.microsoft.com/
+#   - title: Microsoft's Open Source Program
+#     url: /program/
+#   - title: Azure Credits
+#     url: /azure-credits

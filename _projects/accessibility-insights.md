@@ -4,6 +4,6 @@ logo: accessibility-insights.svg
 featured: true
 description: llm's description
 shortDescription: llm's short description
-linkText: Get Accessibility Insights
+linkText: Proprietary Model
 projectUrl: https://github.com/edge/
 ---

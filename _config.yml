@@ -2,8 +2,8 @@ title: EDGE
 email:
 description: EDGE
 
-twitter_username: openatmicrosoft
-github_username: microsoft
+twitter_username: openatedge
+github_username: edge
 
 cdn: https://opensource.azureedge.net
 
@@ -54,7 +54,7 @@ exclude:
 seo:
 
 twitter:
-  username: openatmicrosoft
+  username: openatedge
 
 defaults:
   - scope:

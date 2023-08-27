@@ -67,20 +67,20 @@ jobs:
           return pull_request ? pull_request.number : '';
     - name: jekyll-build
       run: |
-        docker run -i -v ${PWD}:/usr/local/site docker.pkg.github.com/microsoft/opensource.microsoft.com/custom-jekyll-builder:latest sh << COMMANDS
+        docker run -i -v ${PWD}:/usr/local/site docker.pkg.github.com/edge/opensource.edge.com/custom-jekyll-builder:latest sh << COMMANDS
         pwd && whoami
         cd /usr/local/site
         ls -la
         bundle install
         npm i
         ./node_modules/gulp/bin/gulp.js build
-        JEKYLL_ENV=opensource-dev.microsoft.com PR_NUMBER=${{ steps.pull_request_number.outputs.result }} jekyll build
+        JEKYLL_ENV=opensource-dev.edge.com PR_NUMBER=${{ steps.pull_request_number.outputs.result }} jekyll build
         COMMANDS
     - name: compress-site
       run: tar -czvf ../pullrequest.${{ steps.pull_request_number.outputs.result }}.tar.gz .
-      working-directory: /home/runner/work/opensource.microsoft.com/opensource.microsoft.com/_site
+      working-directory: /home/runner/work/opensource.edge.com/opensource.edge.com/_site
     #       actions/upload-artifact/v2
     - uses: actions/upload-artifact@58740802ef971a2d71eff71e63d48ab68d1f5507
       with:
         name: pullrequest-${{ steps.pull_request_number.outputs.result }}-content
-        path: /home/runner/work/opensource.microsoft.com/opensource.microsoft.com/pullrequest.${{ steps.pull_request_number.outputs.result }}.tar.gz
+        path: /home/runner/work/opensource.edge.com/opensource.edge.com/pullrequest.${{ steps.pull_request_number.outputs.result }}.tar.gz
